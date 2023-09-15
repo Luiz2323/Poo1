@@ -12,7 +12,8 @@ public class Persona {
     //se crean los atributos de la clase
     public String nombre;
     public String cedula;
-    public int edad;
+    public int año_nacimiento;
+    
     
     //se genera el contructor sin parametros
 
@@ -21,11 +22,13 @@ public class Persona {
     
     //se crea el constructor parametrizado
 
-    public Persona(String nombre, String cedula, int edad) {
+    public Persona(String nombre, String cedula, int año_nacimiento) {
         this.nombre = nombre;
         this.cedula = cedula;
-        this.edad = edad;
+        this.año_nacimiento = año_nacimiento;
     }
+
+  
     
     //se generan los metodos get
 
@@ -37,9 +40,11 @@ public class Persona {
         return cedula;
     }
 
-    public int getEdad() {
-        return edad;
+    public int getAño_nacimiento() {
+        return año_nacimiento;
     }
+
+    
     
     //se generan los metodos set
 
@@ -51,9 +56,11 @@ public class Persona {
         this.cedula = cedula;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setAño_nacimiento(int año_nacimiento) {
+        this.año_nacimiento = año_nacimiento;
     }
+
+   
     
     
     

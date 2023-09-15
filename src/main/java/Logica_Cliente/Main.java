@@ -49,16 +49,15 @@ public class Main {
         obj_persona.setCedula(cedula);
         System.err.println("¿Cual es el año de nacimiento de "+nombre+"?:");
         ano_de_nacimiento = scan.nextInt();
-        edad = ano_de_nacimiento - año_actual;
+        obj_persona.setAño_nacimiento(ano_de_nacimiento);
         
-        //comprobamos de que la edad siempre sea positiva
-        edad = (edad>0) ? edad : edad *-1;
+        int resultado= año_actual-obj_persona.getAño_nacimiento();
         
         //enviamos la edad al objeto
-        obj_persona.setEdad(edad);
+        
         System.out.println("Nombre de la persona es:"+obj_persona.getNombre()+"\n");
         System.out.println("La cedula es:"+obj_persona.getCedula()+"\n");
-        System.out.println("La Edad actual es:"+obj_persona.getEdad()+"\n");
+        System.out.println("La Edad actual es:"+resultado+"\n");
         
 
         
